@@ -7,11 +7,11 @@ public:
         {
             map[nums[i]]++;
         }
-        for(int i:nums)
+        for(auto i:map)
         {
-            if(map[i]>1)
+            if(i.second>1)
             {
-                ans=i;
+                ans=i.first;
             }
         }
         return ans;
