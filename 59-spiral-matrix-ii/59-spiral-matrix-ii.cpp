@@ -14,23 +14,17 @@ public:
             for(int i=left; i<=right; i++){
                 ans[top][i]=++val;
             }
-           //if(top==bottom)
-                //break;
             top++;
             
             for(int i=top; i<=bottom; i++){
                 ans[i][right]=++val;
             }
-            //if(left==right)
-                //break;
             right--;
             
             if(top<=bottom)
             for(int i=right; i>=left; i--){
                 ans[bottom][i]=++val;
             }
-           // if(top==bottom)
-                //break;
             bottom--;
             
             
@@ -38,8 +32,6 @@ public:
             for(int i=bottom; i>=top; i--){
                 ans[i][left]=++val;
             }
-            //if(left==right)
-               // break;
             left++;
         }
         return ans;
