@@ -12,10 +12,7 @@ public:
         {
             if(it.first == it.second)
             {
-                if(it.first > ans)
-                {
                     ans = it.first;
-                }
             }
         }
         return ans;
