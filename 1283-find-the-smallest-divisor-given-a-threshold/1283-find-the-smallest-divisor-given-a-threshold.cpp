@@ -8,7 +8,11 @@ public:
         {
             sum=sum+(nums[i]/mid)+((nums[i]%mid)!=0);
         }
-        return sum<=threshold;
+        //return sum<=threshold;
+        if(sum<=threshold)
+            return true;
+        else 
+            return false;
     }
     int smallestDivisor(vector<int>& nums, int threshold) {
         int start=1;
