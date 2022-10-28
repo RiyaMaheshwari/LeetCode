@@ -6,9 +6,10 @@ public:
         int n=nums.size();
         for(int i=0; i<n; i++)
         {
-            sum=sum+(nums[i]/mid)+((nums[i]%mid)!=0);
+            sum=sum+(nums[i]/mid);
+            if((nums[i]%mid)!=0)
+                sum=sum+1;
         }
-        //return sum<=threshold;
         if(sum<=threshold)
             return true;
         else 
