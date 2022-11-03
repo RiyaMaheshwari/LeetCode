@@ -18,10 +18,11 @@ public:
             c++;
             p=p->next;
         }
+        p=head;
         for(int i=0; i<c/2; i++)
         {
-            head=head->next;
+            p=p->next;
         }
-        return head;
+        return p;
     }
 };
