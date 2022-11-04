@@ -2,7 +2,7 @@ class Solution {
 public:
     string reverseWords(string s) {
         vector<string> v;
-        string ans="";
+        string res="";
         int i;
         int n=s.size();
         for(i=0; i<n; i++)
@@ -22,10 +22,10 @@ public:
         
         for(i=0; i<v.size(); i++)
         {
-            ans=ans+v[i];
-            ans=ans+' ';
+            res=res+v[i];
+            res=res+' ';
         }
-        ans.pop_back();
-        return ans;
+        res.pop_back();
+        return res;
     }
 };
