@@ -6,13 +6,10 @@
  * };
  */
 void deleteNode(struct ListNode* node) {
-    struct ListNode *p=node;
-    while(node->next)
-    {
-        node->val = node->next->val;
-        p=node;
-        node=node->next;
-    }
-    p->next=NULL;
-    return node;
+    ListNode* p=node->next;
+        node->val=p->val;
+        node->next=p->next;
+        p=NULL;
+        delete(p);
 }
+};
