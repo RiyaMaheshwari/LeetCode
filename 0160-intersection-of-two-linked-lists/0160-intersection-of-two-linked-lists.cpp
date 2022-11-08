@@ -11,7 +11,8 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode *p=headA;
         ListNode *q=headB;
-        int c1=0, c2=0;
+        // 1st method
+        /*int c1=0, c2=0;
         while(p!=NULL)
         {
             c1++;
@@ -52,6 +53,20 @@ public:
             }
             return p;
         }
-        return NULL;
+        return NULL;*/
+        if(headA==NULL || headB==NULL)
+            return NULL;
+        while(p!=q){
+            if(p==NULL)
+                p=headB;
+            else
+                p=p->next;
+            
+            if(q==NULL)
+                q=headA;
+            else
+                q=q->next;
+        }
+        return p;
     }
 };
