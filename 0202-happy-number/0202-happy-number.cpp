@@ -11,16 +11,16 @@ public:
         return sum;
     }
     bool isHappy(int n) {
-        unordered_map<int,int>ump;
+        unordered_map<int,int>umap;
         int y=sum(n);
         if(y==1)
             return true;
         while(y!=1){
             y=sum(y);
-            if(ump.find(y)!=ump.end())
+            if(umap.find(y)!=umap.end())
                 return false;
             else
-                ump[y]++;
+                umap[y]++;
         }
         return true;
     }
