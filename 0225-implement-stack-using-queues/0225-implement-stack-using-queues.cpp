@@ -38,7 +38,7 @@ public:
     }
     
     bool empty() {
-        if(q1.empty() && q2.empty())
+        if(q1.empty())
                 return true;
             else
                     return false;
