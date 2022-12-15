@@ -6,11 +6,7 @@ public:
                             return 1;
                     if(n==1)
                             return x;
-                    if(n<0){
-                            ans=pow(x,n);
-                    }
-                    else 
-                        ans=pow(x,n);
-            return ans;
+                   else
+                        return pow(x,n);
     }
 };
