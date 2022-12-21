@@ -17,7 +17,7 @@ public:
                     return ans;
             queue<TreeNode*> q;
             q.push(root);
-            while(q.size())
+            while(!q.empty())
             {
                   int n=q.size();
                     vector<int> level;
