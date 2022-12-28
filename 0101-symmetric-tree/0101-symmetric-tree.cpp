@@ -25,7 +25,7 @@ public:
                 && f(p->right, q->left);
         }
     bool isSymmetric(TreeNode* root) {
-            if(!root)
+            if(root==NULL)
                     return true;
         return f(root->left, root->right);
     }
