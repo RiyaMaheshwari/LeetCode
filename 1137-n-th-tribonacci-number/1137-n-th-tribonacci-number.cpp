@@ -13,5 +13,5 @@ public:
                     a[i]=a[i-1]+a[i-2]+a[i-3];
             }
             return a[n];
-    }
+     }
 };
