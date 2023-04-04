@@ -8,13 +8,13 @@ public:
             //set<string>st;
             unordered_map<char,int>mp;
             // unordered_map<string,int>mp2;
-            string ans="";
+           // string ans="";
             while(j<n)
             {
                     mp[s[j]]++;
                     if(mp.size()==j-i+1)
                     {
-                            ans+=s[j];
+                           // ans+=s[j];
                             j++;
                     }
                     else if(mp.size()<j-i+1)
